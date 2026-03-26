@@ -27,7 +27,20 @@ Cuando usás las funciones de inteligencia artificial (asesor financiero, entrad
 - Nunca se envían fotos ni imágenes, solo el texto que contienen
 
 **Qué registra el servidor intermediario (Cloudflare Worker):**
-El servidor propio de Nido solo almacena un contador anónimo por dispositivo: cuántas veces usaste cada función de IA (voz, foto, chat) en el mes en curso. Este contador se usa exclusivamente para controlar el límite de uso gratuito. **No se almacena el contenido de ninguna consulta.**
+El servidor propio de Nido solo almacena un contador anónimo por dispositivo: cuántas veces usaste cada función de IA (voz, foto, chat) en el mes en curso. Este contador se usa exclusivamente para controlar el límite de uso mensual. **No se almacena el contenido de ninguna consulta.**
+
+**Límites de uso mensual de las funciones de IA:**
+Las funciones de inteligencia artificial tienen un límite de consultas por mes que se reinicia el primer día de cada mes:
+
+| Función | Límite mensual |
+|---|---|
+| Entrada por voz | 500 consultas |
+| Chat con asesor financiero | 150 consultas |
+| Escaneo de tickets (OCR) | 100 consultas |
+| Análisis e insights | 30 consultas |
+| Plan financiero | 15 consultas |
+
+Cuando se alcanza el límite mensual, la función queda deshabilitada hasta el siguiente ciclo. El contador se reinicia automáticamente el primer día de cada mes.
 
 Podés consultar la política de privacidad de Anthropic en: [https://www.anthropic.com/privacy](https://www.anthropic.com/privacy)
 
@@ -90,7 +103,7 @@ Si realizamos cambios importantes en esta política, lo notificaremos a través 
 
 Si tenés preguntas sobre esta política de privacidad, podés contactarnos en:
 
-**Email:** [tu-email@dominio.com]
+**Email:** info@nidoapp.com
 
 ---
 
